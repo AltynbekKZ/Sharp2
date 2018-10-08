@@ -11,10 +11,11 @@ namespace Sharp2HW
 
         public static int Width { get; set; }
         public static int Height { get; set; }
-        public static BaseObject[] _objects;
+        public static BaseObject[] _objArray;
        
         
         static Game(){ }
+
 
         public static void Init(Form form)
         {
@@ -34,11 +35,13 @@ namespace Sharp2HW
         }
 
 
-
+        /// <summary>
+        /// Перебор объектов и отобразить объект
+        /// </summary>
         public static void Draw()
         {
-            
-            foreach (BaseObject baseObject in _objects)
+            Buffer.Graphics.Clear(Color.Black);
+            foreach (BaseObject baseObject in _objArray)
             {
                 baseObject.Draw();
             }
@@ -46,22 +49,28 @@ namespace Sharp2HW
             Buffer.Render();
         }
 
+        /// <summary>
+        /// Изменение направления для объектов
+        /// </summary>
         public static void Update()
         {
-            foreach (BaseObject baseObject in _objects)
+            foreach (BaseObject baseObject in _objArray)
             {
                 baseObject.Update();
             }
         }
 
+        /// <summary>
+        /// Создание массива объектов
+        /// </summary>
         public static void Load()
         {
             Buffer.Graphics.Clear(Color.Black);
-            _objects = new BaseObject[30];
-            for (int i = 0; i < _objects.Length; i++)
-            {
-                _objects[i] = new BaseObject(new Point(600, i * 20), new Point(15 - i, 15 - i), new Size(20, 20));
-            }
+            _objArray = new BaseObject[30];
+            for (int i = 0; i < _objArray.Length / 2; i++)
+                _objArray[i] = new BaseObject(new Point(600, i * 20), new Point(-i, -i), new Size(10, 10));
+            for (int i = _objArray.Length / 2; i < _objArray.Length; i++)
+                _objArray[i] = new Star(new Point(600, i * 20), new Point(i, i), new Size(10, 10));
         }
 
         private static void Timer_Tick(object sender, EventArgs e)

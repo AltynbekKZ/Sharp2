@@ -5,3 +5,10 @@ C:\Users\altynbek.satuov\source\repos\Sharp2HW\Sharp2HW\obj\Debug\Sharp2HW.cspro
 C:\Users\altynbek.satuov\source\repos\Sharp2HW\Sharp2HW\obj\Debug\Sharp2HW.csproj.CoreCompileInputs.cache
 C:\Users\altynbek.satuov\source\repos\Sharp2HW\Sharp2HW\obj\Debug\Sharp2HW.exe
 C:\Users\altynbek.satuov\source\repos\Sharp2HW\Sharp2HW\obj\Debug\Sharp2HW.pdb
+D:\Code\git\Sharp2\Sharp2HW\Sharp2HW\bin\Debug\Sharp2HW.exe.config
+D:\Code\git\Sharp2\Sharp2HW\Sharp2HW\bin\Debug\Sharp2HW.exe
+D:\Code\git\Sharp2\Sharp2HW\Sharp2HW\bin\Debug\Sharp2HW.pdb
+D:\Code\git\Sharp2\Sharp2HW\Sharp2HW\obj\Debug\Sharp2HW.csprojAssemblyReference.cache
+D:\Code\git\Sharp2\Sharp2HW\Sharp2HW\obj\Debug\Sharp2HW.csproj.CoreCompileInputs.cache
+D:\Code\git\Sharp2\Sharp2HW\Sharp2HW\obj\Debug\Sharp2HW.exe
+D:\Code\git\Sharp2\Sharp2HW\Sharp2HW\obj\Debug\Sharp2HW.pdb

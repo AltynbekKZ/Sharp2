@@ -14,13 +14,14 @@ namespace Sharp2HW
         
         static void Main(string[] args)
         {
-           Form form = new Form();
-           form.Width = 600;
-           form.Height = 600;
-           Game.Init(form);
+            Form form = new Form();
+            form.Width = 800;
+            form.Height = 600;              
+            Game.Init(form);
             form.Show();
-            //Game.Draw();
+            Game.Draw();
             Application.Run(form);
+
         }
 
         
